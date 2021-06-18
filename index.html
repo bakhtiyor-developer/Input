@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    
+    <form class="main-form" for="https://echo/htmlacademy.ru">
+        <h1 class="form__title">
+            Hello!
+        </h1>
+        <p class="form__title--desc">
+            In this platform you would know who you are!
+        </p>
+        
+        <div class="mini-container mini-container-resp">
+            <label class="form__label">
+                <p class="input-subtitle">
+                    What is your name?
+                </p>
+                <input class="form__input" type="name" autocomplete="off" name="user-name" placeholder="Enter your name..." required>
+            </label>
+        </div>
+        
+        <div class="mini-container mini-container-two">
+            <label class="form__label">
+                <p class="input-subtitle">
+                    What is your surname?
+                </p>
+                <input class="form__input form__input-surname" autocomplete="off" type="surname" name="user-surname" placeholder="Enter your surname..." required>
+            </label>
+        </div>
+        
+        <div class="mini-container mini-container-three">
+            <label class="form__label">
+                <p class="input-subtitle">
+                    What is your email?
+                </p>
+                <input class="form__input form__input-email" pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" autocomplete="off" type="email" name="user-email" placeholder="Enter your email..." required>
+            </label>
+        </div>
+        
+        <button class="form-btn">
+            Confirm
+        </button>
+        
+        <footer class="footer">
+            <address class="footer-address">
+                
+                <ul class="address-list">
+                    <li class="address-item">
+                        <p class="phone-num">Phone:</p>
+                        <a href="+998996060164" class="contact-link">+(998)99-606-01-64</a>
+                    </li>
+                    <li class="address-item">
+                        <p class="email-adrs">Email:</p>
+                        <a href="mirzaakhmedovbr@gmail.com" class="contact-link">mirzaakhmedovbr@gmail.com</a>
+                    </li>
+                </ul>
+                
+                
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a href="https://github.com/bakhtiyorr" class="social-link">
+                            <img src="./img/telegram.svg" alt="img" class="social-link-img">
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://insta.com/khalidisme_" class="social-link">
+                            <img src="./img/github.svg" alt="img" class="social-link-img">
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://t.me/khalidisme" class="social-link">
+                            <img src="./img/instagram (1).svg" alt="img" class="social-link-img">
+                        </a>
+                    </li>
+                </ul>
+            </address>
+            
+        </footer>
+        
+    </form>
+    
+    
+    
+    <script src="./js/main.js"></script>
+</body>
+</html>
