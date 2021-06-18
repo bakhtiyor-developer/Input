@@ -19,39 +19,17 @@ body {
 }
 
 .main-form {
+    background-image: url('../img/macback.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     overflow-x: hidden;
     overflow-y: hidden;
-    position: relative;
-    z-index: 1;
     width: 700px;
     height: 620px;
     background-color: white;
     box-shadow: 0px 0px 15px darkgray;
     border-radius: 10px;
-}
-
-.main-form::before {
-    position: absolute;
-    z-index: -1;
-    top: -100px;
-    left: -350px;
-    width: 1000px;
-    height: 500px;
-    background-image: linear-gradient( 109.6deg,  rgba(62,161,219,1) 11.2%, rgba(93,52,236,1) 100.2% );
-    transform: rotate(-42deg);
-    content: "";
-}
-
-.main-form::after {
-    position: absolute;
-    z-index: -1;
-    top: 250px;
-    right: -304px;
-    width: 1000px;
-    height: 470px;
-    background-image: linear-gradient( 109.6deg,  rgba(62,161,219,1) 11.2%, rgba(93,52,236,1) 100.2% );
-    transform: rotate(-42deg);
-    content: "";
+    padding-bottom: 30px;
 }
 
 .form__title {
@@ -254,21 +232,20 @@ body {
 @media(max-width: 700px) {
     .main-form {
         width: 100%;
-        height: 100%;
         overflow-y: scroll;
         background-color: white;
         box-shadow: none;
         border-radius: 0px;
     }
-
+    
     .form__title {
         font-size: 50px;
     }
-
+    
     .form__title--desc {
         font-size: 20px;
     }
-
+    
     .mini-container {
         background-color: rgb(0, 132, 255);
         padding: 20px;
@@ -276,11 +253,11 @@ body {
         height: 150px;
         margin: 30px auto;
     }
-
+    
     .mini-container-resp {
         margin-top: 50px;
     }
-
+    
     .mini-container:hover .form__label {
         transform: scale(1.03, 1.1);
         box-shadow: 0px 0px 10px rgb(95, 95, 95);
@@ -295,7 +272,7 @@ body {
         background-color: rgb(33, 192, 33);
         box-shadow: 0px 0px 5px rgb(33, 192, 33);
     }
-
+    
     .form__label {
         margin: 0;
         display: block;
@@ -340,48 +317,38 @@ body {
         transform: scale(1.02);
         box-shadow: 0px 0px 5px rgb(39, 38, 38);
     }
-
+    
     .footer {
         width: 100%;
         height: 80px;
         padding: 10px 20px;
     }
-
+    
     .footer-address {
         width: 100%;
         background-image: radial-gradient( circle 654px at 0.6% 48%,  rgba(12,170,255,1) 0%, rgba(151,255,129,1) 86.3% );
     }
 }
 
-@media(max-width: 688px) {
-    .main-form::after {
-        display: none;
+@media(max-width: 700px) {
+     .main-form {
+        height: 100%;
     }
-
-    .main-form {
-        background-image: url('../img/macback.jpg');
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-    }
-
-    .main-form::before {
-        display: none;
-    }
-
+    
     .footer {
         bottom: 5%;
     }
-
+    
     .footer-address {
         padding: 17px 30px;
     }
-
+    
     .address-list {
         width: 100%;
         justify-content: space-between;
         padding-bottom: 10px;
     }
-
+    
     .social-list {
         border-top: 1px solid white;
         padding-top: 10px;
@@ -391,17 +358,26 @@ body {
 }
 
 @media(max-width: 584px) {
+    .main-form {
+        height: 106%;
+        padding-bottom: 20px;
+    }
+
+    .form__title {
+        margin-top: 30px;
+    }
+
     .footer {
         bottom: 8%;
     }
-
+    
     .address-item {
         margin: 0 auto;
         width: 90%;
         justify-content: center;
         flex-wrap: wrap;
     }
-
+    
     .address-item:not(:first-child) {
         margin: 0 auto;
         margin-top: 10px;
@@ -410,6 +386,10 @@ body {
 
 
 @media(max-width: 399px) {
+    .main-form {
+        height: 110%;
+    }
+
     .form__title--desc {
         width: 90%;
         margin-left: auto;
@@ -418,14 +398,8 @@ body {
     }
 }
 
-@media(max-width: 395px) {
-    .footer {
-        bottom: 10%;
-    }
-}
-
 @media(max-width: 320px) {
-    .footer {
-        bottom: 12%;
+    .main-form {
+        height: 112%;
     }
 }
